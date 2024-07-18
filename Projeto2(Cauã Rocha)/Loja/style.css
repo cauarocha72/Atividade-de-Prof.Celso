@@ -1,37 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 body {
    margin: 0 auto;
    padding: 0;
    box-sizing: border-box;
    list-style: none;
-   font-family: "Roboto",sans-serif ;
-   font-weight: 100px;
-   font-weight: 300;
+   font-family: "Roboto", sans-serif;
+   font-weight: 300px;
    font-style: normal;
    align-items: center;
-   background-color: rgb(255, 248, 248);
-   overflow-x:hidden ;
+   background-color: white;
+   overflow-x: hidden;
 }
 
-a {
-   text-decoration: none;
-}
-
-.nav-manual {
+.nav-manual{
    position: absolute;
    width: 100%;
-   top: 20%; 
+   margin-top: 20%;
    display: flex;
    justify-content: center;
-   background-color: rgb(243, 13, 13); 
-   padding: 10px 0; /* Adicionei padding para espaçamento interno */
-}
-.logo img{
-   height: 100px;
-}
-.logo{
-   width:20%;  
 }
 
 .container{
@@ -41,45 +27,105 @@ a {
    align-items: center;
    justify-content: center;   
 }
-
-header{
-   background-color: rgb(255, 0, 0);
+header {
+   background-color: rgb(105, 28, 177);
    width: 100%;
-   padding: 1px;
-   position: fixed;
+   padding: 10px;
 }
-
+.logo{
+    width: 60%;
+}
+.logo img{
+    width: 120px;
+}
 .sociais{
-   margin-left: auto;
-   width: 20%;
+    width: 30%;
 }
-
 .menu{
-   width: 280px;
-   margin-left: 200px;
+    width: 70%;
 }
 .menu nav a{
-   color: #ffffff;
-   text-decoration: none;
-   padding-right: 20px;
-   font-size: 15px;
-   position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 90px;
+    font-size: 15px;
+    position: relative;
+}
+.menu nav a::after{
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg,rgb(246,248,252),rgb(168,184,248));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: width 1s;
+}
+.menu nav a:hover::after{
+    width: 30px;
+}
+.formulario{
+    max-width: 500px;
+    text-align: center;
+    margin: 1px auto;
+}
+.formulario input, form textarea{
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 0.8em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius:8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 19px;
+    font-family: 'open_sansregular';
+    font-size: 14px;
+    color: #424242;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    resize: none;
 }
 
-   .menu nav a::after{
-      content: "";
-      width: 0px;
-      height: 4px;
-      background-image: linear-gradient(45deg,rgb(246,248,252),rgb(168,184,248));
-      position: absolute;
-      top: 20px;
-      left: 0;
-      transition:width 1s;
-   }
-
-   .menu nav a:hover::after{
-      width: 30px;
-   }
-.div{
-   background-color: rgb(247, 4, 4);
+.formulario input:focus, .formulario textarea:focus {
+     
+    color:#063f5c; 
+    -moz-box-shadow: 0 2px 2px #295b74 !important;
+    -webkit-box-shadow: 0 2px 2px #3cafe7 !important;
+    box-shadow: 0 2px 2px #3cafe7 !important;
+   
 }
+.formulario .btn-submit {
+    color: #fff;
+    background: #0f0f0f ;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+  .formulario .btn-submit:hover {
+   
+    background-color:#10b935;
+    -moz-box-shadow: 0 2px 2px 2px rgba(13, 231, 97, 0.6);
+    -webkit-box-shadow: 0 2px 2px 2px rgba(11, 158, 84, 0.6);
+    box-shadow: 0 2px 2px 2px rgba(4, 238, 24, 0.6);
+  }
+  .formulario textarea {
+    height: 175px;
+    
+  }
+  .metade {
+    float: left;
+    width: 20%;
+    margin-bottom: 0,8em;
+  }
+  .right { width:50%;}
+  .left  { margin-right:1%;}
+  @media (max-width: 1000px) {}
+.main_footer.content{background-color:#353535;color:#fff;font-size:0.875em;}
+.main_footer.content{padding:3em 0em;}
+.main_footer_copy{margin:0;background-color:rgb(245, 240, 240);justify-content:flex-end;width:100%;
+float: right;text-align: center;padding: 1.2em 0em;}
+.main_footer_copy p{font-family: 'open_sanslight';font-size: 1em;color:#fa0303;height: 20px;}
+.main_footer_copy .m-b-footer{margin-bottom:0.5em;}
+.main_footer_copy .by {font-size: 0.96em;}
