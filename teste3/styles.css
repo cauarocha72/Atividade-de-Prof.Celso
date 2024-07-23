@@ -1,4 +1,5 @@
 /* styles.css */
+* /* Estilos gerais */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +15,7 @@ body {
 header {
     background: #fb7918;
     color: #000000;
-    padding: -10% 0;
+    padding: 20px 0;
 }
 
 header .container {
@@ -51,6 +52,7 @@ nav ul li a {
 
 .hero h2 {
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .hero p {
@@ -63,14 +65,14 @@ section {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto ;
-    padding: -100%;
-    color:#000000
+    margin: 0 auto;
+    padding: 0 20px; /* Ajuste o padding conforme necessário */
+    color: #000000;
 }
 
 h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Ajuste o espaçamento conforme necessário */
 }
 
 ul, ol {
@@ -86,16 +88,17 @@ ul, ol {
     margin-top: 10px;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     padding: 10px;
     margin-top: 5px;
     border-radius: 4px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc; /* Corrigir a cor da borda */
 }
 
 .contact form button {
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
     background: #000000;
     border: none;
     color: #ffffff;
@@ -103,7 +106,7 @@ ul, ol {
 }
 
 .contact form button:hover {
-    background: #0b475f;
+    background: #385bbb;
 }
 
 footer {
@@ -111,7 +114,6 @@ footer {
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
-
 }
 
 footer p {
@@ -129,29 +131,39 @@ footer p {
         margin-bottom: 10px;
     }
 }
-.menu{
-    width: 1000%;
+
+/* Estilos específicos para o menu */
+.menu {
+    width: 100%; /* Ajustar conforme necessário */
 }
-.menu nav a{
+
+.menu nav a {
     color: #000000;
     text-decoration: none;
-    padding-right: 90px;
+    padding-right: 30px; /* Ajuste o espaçamento conforme necessário */
     font-size: 20px;
     position: relative;
 }
-.menu nav a::after{
+
+.menu nav a::after {
     content: "";
     width: 0px;
     height: 4px;
-    background-image: linear-gradient(45deg,rgb(0, 85, 255),rgb(0, 51, 255));
+    background-image: linear-gradient(45deg, rgb(212, 212, 212), rgb(255, 255, 255));
     position: absolute;
     top: 20px;
     left: 0;
-    transition: width 1s;
+    transition: width 0.5s ease;
 }
-.menu nav a:hover::after{
-    width: 30px;
+
+.menu nav a:hover::after {
+    width: 30px; /* Ajuste conforme necessário */
 }
+
 .logo {
-    width: -70%;
+    width: 30%; /* Ajuste conforme necessário */
+}
+
+.titulo {
+    margin-bottom: 20px; /* Ajuste o espaçamento conforme necessário */
 }
