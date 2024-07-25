@@ -24,6 +24,7 @@ section.slider {
     height: auto;
     position: relative;
     text-align: center;
+    transition: 1.6s;
 }
 
 .slide-box img {
@@ -33,10 +34,11 @@ section.slider {
 .nav-manual {
     position: absolute;
     width: 100%;
-    bottom: -250px;
+    bottom: -150px;
     margin-top: 1%;
     display: flex;
     justify-content: center;
+    
 }
 
 .nav-manual .manual-btn {
@@ -44,8 +46,7 @@ section.slider {
     padding: 15px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 2s;
-    
+    transition: 1.6s;
 }
 
 .nav-manual .manual-btn:not(:last-child),

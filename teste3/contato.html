@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creche Escola Brilhante - Contato</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="imagens/teu fundo.png" type="image/x-icon">
-    <script src="contato.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos principal -->
+    <link rel="shortcut icon" href="imagens/teu fundo.png" type="image/x-icon"> <!-- Ícone da página -->
+    <script src="contato.js"></script> <!-- Importa o arquivo JavaScript para funcionalidades de contato -->
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-            <img   src="imagens/teu fundo.png" height="195" width="200">
-           </div>
+                <img src="imagens/teu fundo.png" height="100" width="100"> <!-- Imagem do logo -->
+            </div>
             <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li><a href="ensino.html">Ensino</a></li>
-                    <li><a href="admissoes.html">Admissões</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li> <!-- Link para a página Sobre Nós -->
+                        <li><a href="ensino.html">Ensino</a></li> <!-- Link para a página Ensino -->
+                        <li><a href="matricula.html">Matrícula</a></li> <!-- Link para a página Matrícula -->
+                        <li><a href="contato.html">Contato</a></li> <!-- Link para a própria página Contato (ativa) -->
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contato</h2>
-            <form id="contactForm">
+            <h2>Contato</h2> <!-- Título da seção Contato -->
+            <form id="contactForm"> <!-- Formulário de contato -->
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required> <!-- Campo de nome obrigatório -->
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Campo de e-mail obrigatório -->
 
                 <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea> <!-- Campo de mensagem obrigatório -->
 
-                <button type="submit" onclick="formulario()">Enviar</button>
+                <button type="submit" onclick="formulario()">Enviar</button> <!-- Botão de envio do formulário -->
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Creche Escola Brilhante. Todos os direitos reservados.</p>
+        <div class="container"> 
+            <table> <!-- Tabela com links para redes sociais -->
+                <th>Nossos Contatos:</th>
+                <th><a href="https://www.instagram.com/"><img src="imagens/insta.png" alt=""></a></th> <!-- Link para Instagram -->
+                <th><a href="https://www.facebook.com/"><img src="imagens/facebook racista-fotor-bg-remover-2024072592026.png" height="40" width="40"></a></th> <!-- Link para Facebook -->
+                <th><a href="https://web.whatsapp.com/"><img src="imagens/zap zap-fotor-bg-remover-2024072593527.png" height="45" width="45"></a></th> <!-- Link para WhatsApp -->
+            </table> 
+            <p>&copy; 2024 Creche Escola Brilhante. Todos os direitos reservados.</p> <!-- Informação de copyright -->
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript script.js -->
 </body>
 </html>

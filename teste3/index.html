@@ -4,69 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creche Escola Brilhante - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="novo.css">
-    <script src="novo.js" defer></script>
-    <link rel="shortcut icon" href="favicon.ico" type="imagens/teu fundo.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos principal -->
+    <link rel="stylesheet" href="novo.css"> <!-- Importa outro arquivo de estilos (novo.css) -->
+    <script src="novo.js" defer></script> <!-- Importa o arquivo JavaScript novo.js com atributo defer -->
+    <link rel="shortcut icon" href="imagens/teu fundo.png" type="imagens/favicon"> <!-- Ícone da página -->
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-            <img   src="imagens/teu fundo.png" height="195" width="200">
-           </div>
+                <img src="imagens/teu fundo.png" height="100" width="100"> <!-- Imagem do logo -->
+            </div>
             <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li><a href="ensino.html">Ensino</a></li>
-                    <li><a href="admissoes.html">Admissões</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li> <!-- Link para a página Sobre Nós -->
+                        <li><a href="ensino.html">Ensino</a></li> <!-- Link para a página de Ensino -->
+                        <li><a href="matricula.html">Matricula</a></li> <!-- Link para a página de Admissões -->
+                        <li><a href="contato.html">Contato</a></li> <!-- Link para a página de Contato -->
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-<section id="home" class="hero">
-    <div class="container">
-        <h2>Bem-vindo à Creche Escola Brilhante!</h2>
-        <p>Oferecemos um ambiente seguro e estimulante para o desenvolvimento das crianças.</p>
-    </div>
-</section>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à Creche Escola Brilhante!</h2> <!-- Título da seção de boas-vindas -->
+            <p>Oferecemos um ambiente seguro e estimulante para o desenvolvimento das crianças.</p> <!-- Descrição da creche -->
+        </div>
+    </section>
+
     <section class="slider">
         <div class="slider-content">
-          <input type="radio" name="btn-radio" id="radio1">
-          <input type="radio" name="btn-radio" id="radio2">
-    
-        <div class="slide-box primeiro">
-          <img class="imgcadeira" src="imagens/slide1.jpg" height="450" width="300">
+            <input type="radio" name="btn-radio" id="radio1"> <!-- Botão de rádio para o slide 1 -->
+            <input type="radio" name="btn-radio" id="radio2"> <!-- Botão de rádio para o slide 2 -->
+
+            <div class="slide-box primeiro">
+                <img class="imgcadeira" src="imagens/slide1.jpg" height="450" width="300"> <!-- Slide 1 -->
+            </div>
+            <div class="slide-box segundo">
+                <img class="imgpc" src="imagens/slide2.jpg" height="450" width="300"> <!-- Slide 2 -->
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-bnt1"></div> <!-- Botão de navegação automática 1 -->
+                <div class="auto-bnt2"></div> <!-- Botão de navegação automática 2 -->
+            </div>
+
+            <div class="nav-manual"> 
+                <label for="radio1" class="manual-btn"></label> <!-- Botão de navegação manual para slide 1 -->
+                <label for="radio2" class="manual-btn"></label> <!-- Botão de navegação manual para slide 2 -->
+            </div>
         </div>
-        <div class="slide-box segundo">
-          <img class="imgpc" src="imagens/slide2.jpg"  height="450" width="300">
-        </div>
-    
-        <div class="nav-auto">
-          <div class="auto-bnt1"></div>
-          <div class="auto-bnt2"></div>
-        </div>
-    
-        <div class="nav-manual"> 
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-        </div>
-      </div>
-      </section>
+    </section>
 
     <footer>
         <div class="container">
+            <!-- Rodapé com informações de copyright -->
             <p>&copy; 2024 Creche Escola Brilhante. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript script.js -->
 </body>
 </html>
-
-
-
